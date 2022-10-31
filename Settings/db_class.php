@@ -23,7 +23,7 @@ class db_connection
 		
 		//connection
 		//$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
-		$this->db = mysqli_connect(SERVER,USERNAME,PASSWD,DATABASE);
+		$this->db  = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 		
 		//test the connection
 		if (mysqli_connect_errno()) {
