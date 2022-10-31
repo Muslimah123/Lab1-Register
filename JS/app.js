@@ -15,7 +15,7 @@ $(document).ready(() => {
         let regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
         //getting the value of the password and the email
         email = $("#email").val();
-        
+
         let check = regex.test(email);
         if (check) {
             console.log("email valid");
@@ -65,7 +65,7 @@ $(document).ready(() => {
         }
     });
 
-        //getting the value of the password
+    //getting the value of the password
     $("#regis_password").on("keyup", () => {
         regis_password = $("#regis_password").val();
 
@@ -78,10 +78,10 @@ $(document).ready(() => {
         }
     });
 
-    $("#first_name").on("keyup", () => {
+    $("#user_name").on("keyup", () => {
         let regex = /^[ A-Za-z]+$/;
         //getting the value of the first name
-        regis_firstname = $("#first_name").val();
+        regis_firstname = $("#user_name").val();
 
         let check = regex.test(regis_firstname);
         if (check) {

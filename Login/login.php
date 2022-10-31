@@ -1,44 +1,42 @@
-<! DOCTYPE html>  
-<html lang="en" >  
-<head>  
-  <meta charset="UTF-8">  
-  <title> Login Form 
-</title>  
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
-<link rel="stylesheet" href="../CSS/login.css"> 
 
-</head>  
- 
-<body>  
-<h1 class="text-center"> Login form view </h1>  
-    <div class="container">  
-      <div class="row">  
-        <div class="col-md-8 offset-md-2">  
-          <div class="login-form">  
-            <form >  
-              <div class="form-group">  
-                <label for="exampleInputEmail1">Enter Email address </label>  
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">  
-                <small id="emailHelp" class="form-text text-muted"> We'll never share your email with anyone else. </small>  
-              </div>  
-              <div class="form-group">  
-                <label for="exampleInputPassword1"> Enter Password </label>  
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">  
-              </div>  
-              <div class="form-group form-check">  
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">  
-                <label class="form-check-label" for="exampleCheck1"> Check me out </label>  
-              </div>  
-              <button type="submit" class="btn btn-primary"> Submit </button>  
-            </form>  
-          </div>  
-        </div>  
-      </div>  
-    </div>  
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"> </script>  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"> </script>  
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"> </script>  
-    <script>  
-    </script>  
-  </body>  
-</html>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+<form action= "./login_process.php" method="POST" id="login_form">
+  <div class="imgcontainer">
+    <img src="../images/face-icon-user.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="email"><b>Email</b></label></br>
+    <input type="text" placeholder="Enter email" name="customer_email" required id="email" > </br>
+    <div id="error_msg"></div>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="customer_pass" required id="password">
+    <div id="error_msg"></div>
+
+
+    <button type="submit" name="submit1">Login</button>
+    
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="submit" class="cancelbtn" name="submit2">Cancel</button>
+   
+   
+  </div>
+</form>
+
+ <script src="../js/app.js"></script> 
+
+</body>
+</html>

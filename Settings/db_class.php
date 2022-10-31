@@ -1,5 +1,5 @@
 <?php
-
+//database
 
 //database credentials
 require('db_cred.php');
@@ -22,6 +22,7 @@ class db_connection
 	function db_connect(){
 		
 		//connection
+		//$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 		$this->db = mysqli_connect(SERVER,USERNAME,PASSWD,DATABASE);
 		
 		//test the connection

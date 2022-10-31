@@ -6,7 +6,8 @@ include("../classes/customer_class.php");
 function cleanText($data) 
 {
   $data = trim($data);
- 
+  //$data = stripslashes($data);
+  //$data = htmlspecialchars($data);
   return $data;
 }
 

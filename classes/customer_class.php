@@ -1,6 +1,6 @@
 <?php
 //connect to database class
-require("../Settings/db_class.php");
+require("../settings/db_class.php");
 
 /**
 *General class to handle all functions 
@@ -13,10 +13,10 @@ require("../Settings/db_class.php");
 class customer_class extends db_connection
 {
 	//--INSERT--//
-	public function insert_clas($name, $email, $password, $country, $city, $contact, $image, $user_role){
+	public function insert_clas($name, $email, $password, $country, $city, $contact, $user_role){
 		$passhas = md5($password);
-		$sql = "INSERT INTO `customer`(`customer_name`, `customer_email`, `customer_pass`, `customer_country`, `customer_city`, `customer_contact`,'customer_image', `user_role`) 
-			VALUES ('$name','$email','$passhas','$country','$city','$contact','$image','$user_role')";
+		$sql = "INSERT INTO `customer`(`customer_name`, `customer_email`, `customer_pass`, `customer_country`, `customer_city`, `customer_contact`, `user_role`) 
+			VALUES ('$name','$email','$passhas','$country','$city','$contact','$user_role')";
 		return $this->db_query($sql);
 	}
 

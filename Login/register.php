@@ -10,8 +10,8 @@
 </head>
 <body>
   
-    <h1>Customer Register</h1>
-    <p>Kindly fill this form to create an account.</p>
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
     <form method="POST" action = "./register_process.php" id="regis_form">
         <label for="firstname"><b>Firstname</b></label></br>
         <input type="text" placeholder="Enter firstname" name="customer_name" required  id="first_name"></br></br>
@@ -48,7 +48,7 @@
   
       <button type="submit" class="registerbtn" name = "submit">Register</button>
 </form>
- <script src="../JS/register.js"></script> 
+ <script src="../js/app.js"></script> 
 </body>
 </html>
 
